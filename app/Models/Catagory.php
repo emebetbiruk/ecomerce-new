@@ -9,8 +9,7 @@ class Catagory extends Model
 {
     use HasFactory;
     protected $filable = [
-    
-        'name',
+    'name'
 
         ];
         public function products()
