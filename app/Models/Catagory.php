@@ -9,8 +9,13 @@ class Catagory extends Model
 {
     use HasFactory;
     protected $filable = [
-        'id',
+    
         'name',
 
         ];
+        public function products()
+        {
+            return $this ->hasMany(product::class);
+
+        }
 }
