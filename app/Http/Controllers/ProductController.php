@@ -57,9 +57,9 @@ public function edit($id)
  return redirect('product/list');
  }
 
- public function get_by_id($id)
+ public function search($id)
  {
   $product = product::where('id', $id)->first();
-  return view('product.search', compact('product'));
+  return view('product/search', compact('product'));
   }
 }
